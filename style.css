@@ -1,0 +1,29 @@
+/* Sayfa Genel Arka Planı */
+body {
+    background-color: #f4f6f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Üst Menü (Navbar) Özelleştirmeleri */
+.navbar {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Menüye 3 boyutlu gölge katar */
+    padding: 15px 0; /* Menüyü biraz daha ferah yapar */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+/* Menü Linkleri ve Fareyle Üzerine Gelme (Hover) Efekti */
+.nav-link {
+    font-weight: 500;
+    transition: all 0.3s ease; /* Hareketlerin yumuşak olmasını sağlar */
+    margin: 0 5px;
+}
+
+.nav-link:hover {
+    color: #0dcaf0 !important; /* Fareyle üzerine gelince turkuaz olur */
+    transform: translateY(-3px); /* Fareyle üzerine gelince yazıyı hafifçe yukarı kaldırır */
+}
