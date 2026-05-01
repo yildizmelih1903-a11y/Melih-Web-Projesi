@@ -1,29 +1,48 @@
-/* Sayfa Genel Arka Planı */
+/* Sayfa Genel Arka Planı (Hafif ve modern bir geçiş - Gradient) */
 body {
-    background-color: #f4f6f9;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background-attachment: fixed; /* Arka planı sabitler, kaydırmayı güzelleştirir */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
 }
 
-/* Üst Menü (Navbar) Özelleştirmeleri */
+/* Üst Menü Özelleştirmeleri */
 .navbar {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Menüye 3 boyutlu gölge katar */
-    padding: 15px 0; /* Menüyü biraz daha ferah yapar */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+    padding: 15px 0; 
 }
 
 .navbar-brand {
-    font-weight: bold;
-    font-size: 1.5rem;
+    font-weight: 800;
+    font-size: 1.6rem;
     letter-spacing: 1px;
 }
 
-/* Menü Linkleri ve Fareyle Üzerine Gelme (Hover) Efekti */
 .nav-link {
     font-weight: 500;
-    transition: all 0.3s ease; /* Hareketlerin yumuşak olmasını sağlar */
+    transition: all 0.3s ease;
     margin: 0 5px;
 }
 
 .nav-link:hover {
-    color: #0dcaf0 !important; /* Fareyle üzerine gelince turkuaz olur */
-    transform: translateY(-3px); /* Fareyle üzerine gelince yazıyı hafifçe yukarı kaldırır */
+    color: #0dcaf0 !important;
+    transform: translateY(-3px);
+}
+
+/* Kart Tasarımları (Hafif yuvarlatılmış köşeler ve havada durma efekti) */
+.card {
+    border-radius: 16px; /* Köşeleri modern bir şekilde yumuşatır */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hareketleri akıcı yapar */
+}
+
+/* Fareyle kartın üzerine gelince hafifçe havaya kalkması */
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+}
+
+/* CV Başlıkları */
+h2.text-primary {
+    color: #2c3e50 !important; /* Mavi rengi daha asil bir laciverte çeker */
+    font-weight: 800;
 }
