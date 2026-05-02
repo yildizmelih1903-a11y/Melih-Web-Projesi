@@ -14,11 +14,18 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="#">Melih'in Portfolyosu</a>
-            <ul class="navbar-nav ms-auto flex-row gap-3">
-                <li class="nav-item"><a class="nav-link text-white" href="#">Hakkında</a></li>
-                <li class="nav-item"><a class="nav-link text-secondary" href="#">Özgeçmiş (CV)</a></li>
-                <li class="nav-item"><a class="nav-link text-secondary" href="#">Şehrim</a></li>
-            </ul>
+            <!-- Mobil menü butonu (Bunu ekledik ki telefonda açılsın) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-toggle="target" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto flex-row gap-3">
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Hakkında</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="#">Özgeçmiş (CV)</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="#sehrim">Şehrim</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -41,7 +48,7 @@
             <!-- Sol Kolon: Eğitim ve Topluluklar -->
             <div class="col-md-6">
                 
-                <!-- Eğitim Bilgileri (Article Semantic Tag'i) -->
+                <!-- Eğitim Bilgileri -->
                 <article class="card shadow-sm mb-4 border-0 bg-white">
                     <div class="card-body">
                         <h3 class="card-title h5 text-dark fw-bold">Eğitim Bilgileri</h3>
@@ -58,7 +65,7 @@
                     </div>
                 </article>
 
-                <!-- Kulüp ve Topluluklar (Article Semantic Tag'i) -->
+                <!-- Kulüp ve Topluluklar -->
                 <article class="card shadow-sm mb-4 border-0 bg-white">
                     <div class="card-body">
                         <h3 class="card-title h5 text-dark fw-bold">Üyelikler ve Topluluklar</h3>
@@ -76,7 +83,7 @@
             <!-- Sağ Kolon: Deneyimler -->
             <div class="col-md-6">
                 
-                <!-- İş Deneyimi (Article Semantic Tag'i) -->
+                <!-- İş Deneyimi -->
                 <article class="card shadow-sm border-0 bg-white h-100">
                     <div class="card-body">
                         <h3 class="card-title h5 text-dark fw-bold">Girişimcilik ve İş Deneyimi</h3>
@@ -98,7 +105,7 @@
             </div>
         </div>
 
-<!-- Yetenekler ve Yabancı Dil (Tam Genişlikte Alt Bölüm) -->
+        <!-- Yetenekler ve Yabancı Dil -->
         <div class="row mt-4">
             <div class="col-12">
                 <article class="card shadow-sm border-0 bg-white p-2">
@@ -161,15 +168,82 @@
                 </article>
             </div>
         </div>
+    </section>
 
+    <!-- Şehrim Bölümü (Bursa Temalı Slider) -->
+    <section id="sehrim" class="container mt-5 pt-5 mb-5">
+        
+        <!-- Bölüm Başlığı -->
+        <header class="pb-3 mb-4 border-bottom">
+            <h2 class="text-primary">Şehrim: Bursa</h2>
+            <p class="lead text-muted">Osmanlı'nın ilk başkenti, tarihi dokusu ve eşsiz doğasıyla yeşil Bursa.</p>
+        </header>
 
+        <!-- Bootstrap Slider (Carousel) - 4 Resimli -->
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div id="sehrimSlider" class="carousel slide shadow-lg rounded overflow-hidden" data-bs-ride="carousel">
+                    
+                    <!-- Alt Çizgi Göstergeleri -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#sehrimSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#sehrimSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#sehrimSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#sehrimSlider" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
 
+                    <!-- Kayan Resimler -->
+                    <div class="carousel-inner">
+                        <!-- Slayt 1: Ulu Camii -->
+                        <div class="carousel-item active">
+                            <img src="resimler/ULUCAMİİ.jpg" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Bursa Ulu Camii">
+                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3">
+                                <h5>Bursa Ulu Camii</h5>
+                                <p>Osmanlı mimarisinin en önemli eserlerinden biri olan 20 kubbeli şaheser.</p>
+                            </div>
+                        </div>
+                        <!-- Slayt 2: Uludağ -->
+                        <div class="carousel-item">
+                            <img src="resimler/Uludağ_zirve.jpg" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Uludağ">
+                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3">
+                                <h5>Beyaz Cennet: Uludağ</h5>
+                                <p>Türkiye'nin en popüler kış turizmi merkezi ve eşsiz doğa parkı.</p>
+                            </div>
+                        </div>
+                        <!-- Slayt 3: Cumalıkızık -->
+                        <div class="carousel-item">
+                            <img src="resimler/cumalikkizik.webp" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Cumalıkızık">
+                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3">
+                                <h5>Tarihi Cumalıkızık Köyü</h5>
+                                <p>UNESCO Dünya Mirası listesinde yer alan, 700 yıllık Osmanlı sivil mimari örneği.</p>
+                            </div>
+                        </div>
+                        <!-- Slayt 4: Teleferik -->
+                        <div class="carousel-item">
+                            <img src="resimler/telefrik.webp" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Bursa Teleferik">
+                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3">
+                                <h5>Teleferik</h5>
+                                <p>Uludağ'a uzanan dünyanın en uzun hatlı teleferiklerinden biriyle orman manzarası.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sağ/Sol Kontrol Okları -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#sehrimSlider" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Önceki</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#sehrimSlider" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Sonraki</span>
+                    </button>
+                </div>
+            </div>
+        </div>
 
     </section>
 
-
-
-
-
+    <!-- Bootstrap JS (Mobil menünün ve resim kaydırmanın çalışması için ZORUNLU) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
