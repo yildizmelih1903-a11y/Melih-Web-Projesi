@@ -279,9 +279,69 @@
 
     </section>
 
+<!-- E-Ticaret API Vitrini (6. Gün Görevi) -->
+    <section id="api-vitrin" class="container mt-5 pt-5 mb-5">
+        
+        <header class="pb-3 mb-4 border-bottom">
+            <h2 class="text-primary">E-Ticaret Vitrini (Canlı API)</h2>
+            <p class="lead text-muted">FakeStore API üzerinden uzak sunucudan anlık olarak çekilen ürünler.</p>
+        </header>
 
+        <!-- Ürünlerin dizileceği boş kutu. İçini JavaScript ile dolduracağız -->
+        <div class="row" id="urun-listesi">
+            <div class="col-12 text-center mt-4">
+                <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Yükleniyor...</span>
+                </div>
+                <p class="mt-2 text-muted">Ürünler sunucudan çekiliyor, lütfen bekleyin...</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- API Veri Çekme İşlemi (JavaScript) -->
+    <script>
+        // 1. ADIM: İnternetteki ürün veri tabanına (API) gidip 4 tane ürün istiyoruz.
+        fetch('https://fakestoreapi.com/products?limit=4')
+            
+            // 2. ADIM: Gelen cevabı bilgisayarın anlayacağı JSON (veri) formatına çeviriyoruz.
+            .then(cevap => cevap.json())
+            
+            // 3. ADIM: Veriler hazır olduğunda ekrana (HTML içine) yazdırıyoruz.
+            .then(urunler => {
+                
+                // HTML'deki boş ürün kutumuzu buluyoruz
+                const urunKutusu = document.getElementById('urun-listesi');
+                
+                // "Yükleniyor..." yazısını temizliyoruz
+                urunKutusu.innerHTML = ''; 
+
+                // Gelen her bir ürün için bir döngü başlatıp ekrana Bootstrap kartı çiziyoruz
+                urunler.forEach(urun => {
+                    urunKutusu.innerHTML += `
+                        <div class="col-md-3 mb-4">
+                            <div class="card h-100 shadow-sm border-0 p-3 card-hover-effect">
+                                <img src="${urun.image}" class="card-img-top" style="height: 180px; object-fit: contain;" alt="Ürün Resmi">
+                                <div class="card-body text-center d-flex flex-column p-0 pt-3">
+                                    <h6 class="card-title text-truncate" title="${urun.title}">${urun.title}</h6>
+                                    <p class="card-text fw-bold text-success mt-auto fs-5">$${urun.price}</p>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                });
+            })
+            
+            // 4. ADIM: Eğer internet veya sunucu kaynaklı bir hata olursa ekrana uyarı veriyoruz.
+            .catch(hata => {
+                document.getElementById('urun-listesi').innerHTML = '<p class="text-danger text-center">Ürünler yüklenirken bir bağlantı hatası oluştu!</p>';
+            });
+    </script>
     
     <!-- Bootstrap JS (Mobil menünün ve resim kaydırmanın çalışması için ZORUNLU) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
 </body>
 </html>
