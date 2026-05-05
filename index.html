@@ -11,6 +11,7 @@
 <body>
 
     <!-- Üst Menü -->
+    <!-- Üst Menü -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="#">Melih'in Portfolyosu</a>
@@ -22,13 +23,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto flex-row gap-3">
                     <li class="nav-item"><a class="nav-link text-white" href="#">Hakkında</a></li>
-                    <li class="nav-item"><a class="nav-link text-secondary" href="#">Özgeçmiş (CV)</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="#ozgecmis">Özgeçmiş (CV)</a></li>
                     <li class="nav-item"><a class="nav-link text-secondary" href="#sehrim">Şehrim</a></li>
+                    <!-- İŞTE BURAYA YENİ BÖLÜMLERİMİZİN LİNKLERİ GELDİ -->
+                    <li class="nav-item"><a class="nav-link text-secondary" href="#mirasimiz">Mirasımız</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="#api-vitrin">Vitrin</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="#iletisim">İletişim</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-
     <!-- Hakkında İçeriği -->
     <div class="container mt-5">
         <h1>Merhaba, Ben Melih</h1>
@@ -299,6 +303,67 @@
 
     </section>
 
+    <!-- İletişim Bölümü (7. Gün Görevi) -->
+    <section id="iletisim" class="container mt-5 pt-5 mb-5">
+        
+        <header class="pb-3 mb-4 border-bottom">
+            <h2 class="text-primary">İletişime Geç</h2>
+            <p class="lead text-muted">Projeler, işbirlikleri veya sadece merhaba demek için bana ulaşabilirsiniz.</p>
+        </header>
+
+        <div class="row bg-white shadow-sm rounded p-4 border-0">
+            <!-- Sol Kolon: İletişim Formu -->
+            <div class="col-md-7 mb-4 mb-md-0">
+                <form id="iletisimFormu">
+                    <div class="mb-3">
+                        <label for="adSoyad" class="form-label fw-bold">Adınız Soyadınız</label>
+                        <input type="text" class="form-control bg-light border-0 p-3" id="adSoyad" placeholder="Örn: Melih YILDIZ">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label fw-bold">E-posta Adresiniz</label>
+                        <input type="email" class="form-control bg-light border-0 p-3" id="email" placeholder="mail@ornek.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="mesaj" class="form-label fw-bold">Mesajınız</label>
+                        <textarea class="form-control bg-light border-0 p-3" id="mesaj" rows="5" placeholder="Buraya mesajınızı yazabilirsiniz..."></textarea>
+                    </div>
+                    <!-- Buton tipini şimdilik "button" yaptık ki sayfayı yenilemesin, yarın JS ile canlandıracağız -->
+                    <button type="button" class="btn btn-primary px-4 py-2 w-100 fw-bold" id="gonderButonu">Mesajı Gönder</button>
+                </form>
+            </div>
+
+            <!-- Sağ Kolon: İletişim Bilgileri -->
+            <div class="col-md-5 d-flex flex-column justify-content-center px-md-5 mt-4 mt-md-0 border-start d-none d-md-flex">
+                <h3 class="h5 fw-bold mb-4 text-dark">İletişim Bilgileri</h3>
+                
+                <div class="d-flex align-items-center mb-3">
+                    <div class="bg-primary text-white rounded-circle d-flex justify-content-center align-items-center me-3" style="width: 40px; height: 40px;">📍</div>
+                    <div>
+                        <h6 class="mb-0 fw-bold">Konum</h6>
+                        <small class="text-muted">Sakarya / Türkiye</small>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center mb-3">
+                    <div class="bg-primary text-white rounded-circle d-flex justify-content-center align-items-center me-3" style="width: 40px; height: 40px;">✉️</div>
+                    <div>
+                        <h6 class="mb-0 fw-bold">E-posta</h6>
+                        <small class="text-muted">melih.yildiz8@ogr.sakarya.edu.tr</small>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center mb-4">
+                    <div class="bg-primary text-white rounded-circle d-flex justify-content-center align-items-center me-3" style="width: 40px; height: 40px;">🎓</div>
+                    <div>
+                        <h6 class="mb-0 fw-bold">Üniversite</h6>
+                        <small class="text-muted">Sakarya Üniversitesi</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
     <!-- API Veri Çekme İşlemi (JavaScript) -->
     <script>
         // 1. ADIM: İnternetteki ürün veri tabanına (API) gidip 4 tane ürün istiyoruz.
@@ -337,6 +402,8 @@
                 document.getElementById('urun-listesi').innerHTML = '<p class="text-danger text-center">Ürünler yüklenirken bir bağlantı hatası oluştu!</p>';
             });
     </script>
+
+
     
     <!-- Bootstrap JS (Mobil menünün ve resim kaydırmanın çalışması için ZORUNLU) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
