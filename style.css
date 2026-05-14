@@ -46,3 +46,17 @@ h2.text-primary {
     color: #2c3e50 !important; /* Mavi rengi daha asil bir laciverte çeker */
     font-weight: 800;
 }
+/* Özgeçmiş Yetenek Barları İçin Sınıflar (Sıfır Inline CSS Kuralı İçin) */
+.progress-ince {
+    height: 6px;
+}
+.seviye-75 { width: 75%; }
+.seviye-35 { width: 35%; }
+.seviye-50 { width: 50%; }
+.seviye-85 { width: 85%; }
+
+/* Şehrim Slider Resimleri İçin */
+.slider-resmi {
+    height: 500px; 
+    object-fit: cover;
+}

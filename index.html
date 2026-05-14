@@ -3,441 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Teknolojileri Projesi</title>
-    <!-- Bootstrap CSS -->
+    <title>Hakkında - Melih'in Portfolyosu</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Üst Menü -->
-    <!-- Üst Menü -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">Melih'in Portfolyosu</a>
-            <!-- Mobil menü butonu (Bunu ekledik ki telefonda açılsın) -->
+            <a class="navbar-brand" href="index.html">Melih'in Portfolyosu</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-toggle="target" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto flex-row gap-3">
-                    <li class="nav-item"><a class="nav-link text-white" href="#">Hakkında</a></li>
-                    <li class="nav-item"><a class="nav-link text-secondary" href="#ozgecmis">Özgeçmiş (CV)</a></li>
-                    <li class="nav-item"><a class="nav-link text-secondary" href="#sehrim">Şehrim</a></li>
-                    <!-- İŞTE BURAYA YENİ BÖLÜMLERİMİZİN LİNKLERİ GELDİ -->
-                    <li class="nav-item"><a class="nav-link text-secondary" href="#mirasimiz">Mirasımız</a></li>
-                    <li class="nav-item"><a class="nav-link text-secondary" href="#api-vitrin">Vitrin</a></li>
-                    <li class="nav-item"><a class="nav-link text-secondary" href="#iletisim">İletişim</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Hakkında</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="ozgecmis.html">Özgeçmiş (CV)</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="sehrim.html">Şehrim</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="mirasimiz.html">Mirasımız</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="vitrin.html">Vitrin</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="iletisim.html">İletişim</a></li>
                     <li class="nav-item ms-lg-3"><a class="btn btn-outline-info btn-sm mt-1" href="login.php">Giriş Yap</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!-- Hakkında İçeriği -->
-    <div class="container mt-5">
-        <h1>Merhaba, Ben Melih</h1>
-        <p>Sakarya Üniversitesi'nde Bilgisayar Mühendisliği öğrencisiyim.</p>
-        <p>Boş zamanlarımda e-ticaret süreçleri, ürün fotoğrafçılığı ve mekanik saatlerin çalışma prensipleri üzerine araştırmalar yapıyorum. Ayrıca elektrikli araç teknolojilerini yakından takip ediyorum.</p>
-    </div>
 
-    <!-- Özgeçmiş (CV) Bölümü -->
-    <section id="ozgecmis" class="container mt-5 pt-5 mb-5">
-        
-        <!-- Bölüm Başlığı -->
-        <header class="pb-3 mb-4 border-bottom">
-            <h2 class="text-primary">Özgeçmiş (CV)</h2>
-        </header>
-
-        <div class="row">
-            <!-- Sol Kolon: Eğitim ve Topluluklar -->
-            <div class="col-md-6">
-                
-                <!-- Eğitim Bilgileri -->
-                <article class="card shadow-sm mb-4 border-0 bg-white">
-                    <div class="card-body">
-                        <h3 class="card-title h5 text-dark fw-bold">Eğitim Bilgileri</h3>
-                        <ul class="list-group list-group-flush mt-3">
-                            <li class="list-group-item bg-transparent">
-                                <h4 class="h6 fw-bold mb-1">Sakarya Üniversitesi</h4>
-                                <span class="text-muted small">Bilgisayar Mühendisliği (1. Sınıf)</span>
-                            </li>
-                            <li class="list-group-item bg-transparent">
-                                <h4 class="h6 fw-bold mb-1">Bursa Kaşgarlı Mahmud Anadolu Lisesi</h4>
-                                <span class="text-muted small">Lise Eğitimi</span>
-                            </li>
-                        </ul>
-                    </div>
-                </article>
-
-                <!-- Kulüp ve Topluluklar -->
-                <article class="card shadow-sm mb-4 border-0 bg-white">
-                    <div class="card-body">
-                        <h3 class="card-title h5 text-dark fw-bold">Üyelikler ve Topluluklar</h3>
-                        <ul class="list-group list-group-flush mt-3">
-                            <li class="list-group-item bg-transparent">🤖 Yapay Zeka Kulübü</li>
-                            <li class="list-group-item bg-transparent">💻 Bilgisayar Topluluğu</li>
-                            <li class="list-group-item bg-transparent">⚙️ SEİS Kulübü</li>
-                            <li class="list-group-item bg-transparent">🌐 IEEE Öğrenci Kolu</li>
-                        </ul>
-                    </div>
-                </article>
-
+    <section id="hakkinda" class="container mt-5 pt-4">
+        <div class="row align-items-center bg-white shadow-sm rounded p-4 border-0">
+            
+            <div class="col-md-8 order-2 order-md-1 mt-4 mt-md-0">
+                <h1 class="text-primary fw-bold">Merhaba, Ben Melih 👋</h1>
+                <p class="lead text-secondary">20 yaşındayım. Aslen Bulgaristan göçmeniyim. Bursa'da yaşıyorum. Sakarya Üniversitesi'nde Bilgisayar Mühendisliği öğrencisiyim.</p>
+                <p class="text-secondary mt-4">
+                    <strong class="fw-bold text-dark text-decoration-underline fs-5 d-block mb-2">📌 HOBİLERİM</strong>
+                    Spor yapmayı seviyorum. Tempolu uzun koşular, kayak, ağırlık antrenmanları, yüzme ve lisanslı futbolculuk yaptım. 
+                    Boş zamanlarımda kendi tekstil markamızıne-ticaret süreçleri ile ilgileniyor ve yönetmeye 
+                    çalışıyorum, ürünlerin fotoğrafçılığını yapıyorum. Mekanik saatlere ve mekanizmlalarına 
+                    ilgiliyim ve mekanik saat dünyasını yakından takip ediyorum. Ayrıca elektrikli araç teknolojileri özellikle bataryaların gelişimiyle ilgileniyorum.
+                </p>
+                <div class="mt-4">
+                    <a href="https://github.com/yildizmelih1903-a11y/Melih-Web-Projesi" target="_blank" class="btn btn-dark me-2">GitHub Profilim</a>
+                    <a href="iletisim.html" class="btn btn-outline-primary">Bana Ulaşın</a>
+                </div>
             </div>
-
-            <!-- Sağ Kolon: Deneyimler -->
-            <div class="col-md-6">
-                
-                <!-- İş Deneyimi -->
-                <article class="card shadow-sm border-0 bg-white h-100">
-                    <div class="card-body">
-                        <h3 class="card-title h5 text-dark fw-bold">Girişimcilik ve İş Deneyimi</h3>
-                        
-                        <div class="mt-4">
-                            <h4 class="h6 fw-bold mb-1 text-primary">Kurucu / E-Ticaret Yöneticisi</h4>
-                            <p class="text-muted small mb-2">Kendi Tekstil Markamız & E-Ticaret Operasyonları</p>
-                            <ul class="small text-secondary">
-                                <li class="mb-1">Tekstil markamızın e-ticaret altyapısının kurulması ve pazaryeri (Trendyol vb.) süreçlerinin yönetilmesi.</li>
-                                <li class="mb-1">Satış oranlarını artırmak amacıyla ürün fotoğrafçılığı ve arama motoru optimizasyonu (SEO) çalışmalarının yürütülmesi.</li>
-                                <li class="mb-1">Müşteri ilişkileri yönetimi (CRM) ile müşteri memnuniyetinin sağlanması ve operasyonel süreçlerin takibi.</li>
-                                <li>Sektördeki diğer işletme sahipleriyle B2B (işletmeden işletmeye) toplantılar gerçekleştirerek iş ağının (networking) ve pazar stratejilerinin geliştirilmesi.</li>
-                            </ul>
-                        </div>
-                        
-                    </div>
-                </article>
-
+            
+            <div class="col-md-4 order-1 order-md-2 text-center">
+                <img src="resimler/kendi.fotografim.jpeg" class="img-fluid rounded-circle shadow profil-resmi" alt="Profil Resmi">
             </div>
-        </div>
-
-        <!-- Yetenekler ve Yabancı Dil -->
-        <div class="row mt-4">
-            <div class="col-12">
-                <article class="card shadow-sm border-0 bg-white p-2">
-                    <div class="card-body">
-                        <h3 class="card-title h5 text-dark fw-bold mb-4">Teknik Yetkinlikler ve Yabancı Dil</h3>
-                        
-                        <div class="row">
-                            <!-- Yazılım ve Teknoloji -->
-                            <div class="col-md-6 mb-3">
-                                <h4 class="h6 text-secondary mb-3">Yazılım & Geliştirme</h4>
-                                
-                                <div class="mb-2">
-                                    <div class="d-flex justify-content-between small mb-1">
-                                        <span>Web Teknolojileri (HTML, CSS, PHP, JS)</span>
-                                        <span class="text-muted">Orta</span>
-                                    </div>
-                                    <div class="progress" style="height: 6px;">
-                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 75%"></div>
-                                    </div>
-                                </div>
-
-                                <div class="mb-2">
-                                    <div class="d-flex justify-content-between small mb-1">
-                                        <span>C# & C++</span>
-                                        <span class="text-muted">Temel Seviye</span>
-                                    </div>
-                                    <div class="progress" style="height: 6px;">
-                                        <div class="progress-bar bg-info" role="progressbar" style="width: 35%"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Diller ve Diğer Yetenekler -->
-                            <div class="col-md-6 mb-3">
-                                <h4 class="h6 text-secondary mb-3">Dil & Operasyonel Yetkinlikler</h4>
-                                
-                                <div class="mb-2">
-                                    <div class="d-flex justify-content-between small mb-1">
-                                        <span>İngilizce</span>
-                                        <span class="text-muted">B1 (Orta Seviye)</span>
-                                    </div>
-                                    <div class="progress" style="height: 6px;">
-                                        <div class="progress-bar bg-success" role="progressbar" style="width: 50%"></div>
-                                    </div>
-                                </div>
-
-                                <div class="mb-2">
-                                    <div class="d-flex justify-content-between small mb-1">
-                                        <span>SEO & Ürün Fotoğrafçılığı</span>
-                                        <span class="text-muted">İleri Seviye</span>
-                                    </div>
-                                    <div class="progress" style="height: 6px;">
-                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 85%"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </article>
-            </div>
+            
         </div>
     </section>
 
-    <!-- Şehrim Bölümü (Bursa Temalı Slider) -->
-    <section id="sehrim" class="container mt-5 pt-5 mb-5">
+    <section id="koyum-video" class="container mt-5 pt-5 mb-5">
         
-        <!-- Bölüm Başlığı -->
         <header class="pb-3 mb-4 border-bottom">
-            <h2 class="text-primary">Şehrim: Bursa</h2>
-            <p class="lead text-muted">Osmanlı'nın ilk başkenti, tarihi dokusu ve eşsiz doğasıyla yeşil Bursa.</p>
+            <h2 class="text-primary">Köklerim</h2>
+            <p class="lead text-muted">Bulgaristan Oruzlu (Erovet) Köyü</p>
         </header>
 
-        <!-- Bootstrap Slider (Carousel) - 4 Resimli -->
         <div class="row justify-content-center">
             <div class="col-md-10">
-                <div id="sehrimSlider" class="carousel slide shadow-lg rounded overflow-hidden" data-bs-ride="carousel">
+                <a href="https://www.youtube.com/watch?v=ITYQrfYckvY&t=2954s" target="_blank" class="d-block position-relative shadow-lg rounded overflow-hidden text-decoration-none card-hover-effect">
                     
-                    <!-- Alt Çizgi Göstergeleri -->
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#sehrimSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#sehrimSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#sehrimSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#sehrimSlider" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                    </div>
-
-                    <!-- Kayan Resimler -->
-                    <div class="carousel-inner">
-                        <!-- Slayt 1: Ulu Camii -->
-                        <div class="carousel-item active">
-                            <img src="resimler/ULUCAMİİ.jpg" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Bursa Ulu Camii">
-                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3">
-                                <h5>Bursa Ulu Camii</h5>
-                                <p>Osmanlı mimarisinin en önemli eserlerinden biri olan 20 kubbeli şaheser.</p>
-                            </div>
-                        </div>
-                        <!-- Slayt 2: Uludağ -->
-                        <div class="carousel-item">
-                            <img src="resimler/Uludağ_zirve.jpg" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Uludağ">
-                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3">
-                                <h5>Beyaz Cennet: Uludağ</h5>
-                                <p>Türkiye'nin en popüler kış turizmi merkezi ve eşsiz doğa parkı.</p>
-                            </div>
-                        </div>
-                        <!-- Slayt 3: Cumalıkızık -->
-                        <div class="carousel-item">
-                            <img src="resimler/cumalikkizik.webp" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Cumalıkızık">
-                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3">
-                                <h5>Tarihi Cumalıkızık Köyü</h5>
-                                <p>UNESCO Dünya Mirası listesinde yer alan, 700 yıllık Osmanlı sivil mimari örneği.</p>
-                            </div>
-                        </div>
-                        <!-- Slayt 4: Teleferik -->
-                        <div class="carousel-item">
-                            <img src="resimler/telefrik.webp" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Bursa Teleferik">
-                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3">
-                                <h5>Teleferik</h5>
-                                <p>Uludağ'a uzanan dünyanın en uzun hatlı teleferiklerinden biriyle orman manzarası.</p>
-                            </div>
+                    <img src="resimler/oruzlu.bg.jpg" class="w-100 video-kapak" alt="Oruzlu Köyü">
+                    
+                    <div class="position-absolute top-50 start-50 translate-middle">
+                        <div class="bg-white rounded-circle d-flex justify-content-center align-items-center shadow oynat-butonu-arkaplan">
+                            <span class="text-dark oynat-ikon">▶</span>
                         </div>
                     </div>
 
-                    <!-- Sağ/Sol Kontrol Okları -->
-                    <button class="carousel-control-prev" type="button" data-bs-target="#sehrimSlider" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Önceki</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#sehrimSlider" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Sonraki</span>
-                    </button>
-                </div>
+                </a>
             </div>
         </div>
 
     </section>
-
-<!-- Mirasımız Bölümü -->
-    <section id="mirasimiz" class="container mt-5 pt-5 mb-5">
-        
-        <!-- Bölüm Başlığı -->
-        <header class="pb-3 mb-4 border-bottom">
-            <h2 class="text-primary">Kültürel Mirasımız</h2>
-            <p class="lead text-muted">Bursa'dan doğan ve yüzyıllardır yaşayan efsane: Türk Gölge Oyunu.</p>
-        </header>
-
-        <!-- Miras İçeriği (Article Semantic Tag'i ile) -->
-        <article class="row align-items-center bg-white shadow-sm rounded p-4 border-0 card-hover-effect">
-            
-            <!-- Sol Taraf: Metin İçeriği -->
-            <div class="col-md-7 order-2 order-md-1 mt-4 mt-md-0">
-                <h3 class="h4 fw-bold text-dark mb-3">Gölgelerin Dili: Karagöz ve Hacivat</h3>
-                <p class="text-secondary mb-3">
-                    Bursa'nın ve ülkemizin en önemli somut olmayan kültürel miraslarından biri olan Karagöz ve Hacivat, kökleri Osmanlı dönemine uzanan eşsiz bir gölge oyunudur. Efsaneye göre Bursa'daki Orhan Gazi Camii'nin inşaatında çalışan bu iki usta, nüktedan atışmalarıyla diğer işçileri oyaladıkları gerekçesiyle idam edilmiş; ancak duyulan pişmanlık üzerine Şeyh Küşteri tarafından deriden yapılan tasvirleriyle (figürleriyle) beyaz perdeye yansıtılarak ölümsüzleştirilmiştir.
-                </p>
-                <p class="text-secondary mb-3">
-                    Oyunun temel mizahı, iki zıt karakterin bitmek bilmeyen çatışmasına dayanır. Okumamış ama zeki, dürüst ve patavatsız bir "halk adamı" olan Karagöz ile; eğitim görmüş, gösterişi seven ve ağdalı bir dille konuşan "yarı aydın" Hacivat'ın yanlış anlaşılmalarla dolu diyalogları... Bu atışmalar, aslında dönemin farklı sosyal sınıfları arasındaki iletişimi ve kültürel zenginliği zekice ekrana taşır.
-                </p>
-                <p class="text-secondary mb-0">
-                    Deve veya dana derisinden özel kök boyalarla işlenerek yapılan ve geleneksel olarak "Küşteri Meydanı" adı verilen ışıklı perdede oynatılan bu sanat, 2009 yılında UNESCO tarafından "Somut Olmayan Kültürel Miras" olarak tescillenmiştir. Sadece bir eğlence aracı olmayan bu köklü gelenek, ince mizah anlayışıyla yüzyıllardır toplumun aynası olmaya devam etmektedir.
-                </p>
-            </div>
-            
-            <!-- Sağ Taraf: Görsel -->
-            <div class="col-md-5 order-1 order-md-2 text-center">
-                <!-- İstersen resmi kendi resimler/ klasörüne indireceğin bir Karagöz Hacivat görseliyle değiştirebilirsin -->
-                <img src="resimler/HACİVAT.KARAGÖZ.jpg" class="img-fluid rounded shadow" alt="Karagöz ve Hacivat Gölge Oyunu">
-            </div>
-
-        </article>
-
-    </section>
-
-<!-- E-Ticaret API Vitrini (6. Gün Görevi) -->
-    <section id="api-vitrin" class="container mt-5 pt-5 mb-5">
-        
-        <header class="pb-3 mb-4 border-bottom">
-            <h2 class="text-primary">E-Ticaret Vitrini (Canlı API)</h2>
-            <p class="lead text-muted">FakeStore API üzerinden uzak sunucudan anlık olarak çekilen ürünler.</p>
-        </header>
-
-        <!-- Ürünlerin dizileceği boş kutu. İçini JavaScript ile dolduracağız -->
-        <div class="row" id="urun-listesi">
-            <div class="col-12 text-center mt-4">
-                <div class="spinner-border text-primary" role="status">
-                    <span class="visually-hidden">Yükleniyor...</span>
-                </div>
-                <p class="mt-2 text-muted">Ürünler sunucudan çekiliyor, lütfen bekleyin...</p>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- İletişim Bölümü (7. Gün Görevi) -->
-    <section id="iletisim" class="container mt-5 pt-5 mb-5">
-        
-        <header class="pb-3 mb-4 border-bottom">
-            <h2 class="text-primary">İletişime Geç</h2>
-            <p class="lead text-muted">Projeler, işbirlikleri veya sadece merhaba demek için bana ulaşabilirsiniz.</p>
-        </header>
-
-        <div class="row bg-white shadow-sm rounded p-4 border-0">
-            <!-- Sol Kolon: İletişim Formu -->
-            <div class="col-md-7 mb-4 mb-md-0">
-                <form id="iletisimFormu">
-                    <div class="mb-3">
-                        <label for="adSoyad" class="form-label fw-bold">Adınız Soyadınız</label>
-                        <input type="text" class="form-control bg-light border-0 p-3" id="adSoyad" placeholder="Örn: Melih YILDIZ">
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label fw-bold">E-posta Adresiniz</label>
-                        <input type="email" class="form-control bg-light border-0 p-3" id="email" placeholder="mail@ornek.com">
-                    </div>
-                    <div class="mb-3">
-                        <label for="mesaj" class="form-label fw-bold">Mesajınız</label>
-                        <textarea class="form-control bg-light border-0 p-3" id="mesaj" rows="5" placeholder="Buraya mesajınızı yazabilirsiniz..."></textarea>
-                    </div>
-                    <!-- Buton tipini şimdilik "button" yaptık ki sayfayı yenilemesin, yarın JS ile canlandıracağız -->
-                    <button type="button" class="btn btn-primary px-4 py-2 w-100 fw-bold" id="gonderButonu">Mesajı Gönder</button>
-                </form>
-            </div>
-
-            <!-- Sağ Kolon: İletişim Bilgileri -->
-            <div class="col-md-5 d-flex flex-column justify-content-center px-md-5 mt-4 mt-md-0 border-start d-none d-md-flex">
-                <h3 class="h5 fw-bold mb-4 text-dark">İletişim Bilgileri</h3>
-                
-                <div class="d-flex align-items-center mb-3">
-                    <div class="bg-primary text-white rounded-circle d-flex justify-content-center align-items-center me-3" style="width: 40px; height: 40px;">📍</div>
-                    <div>
-                        <h6 class="mb-0 fw-bold">Konum</h6>
-                        <small class="text-muted">Sakarya / Türkiye</small>
-                    </div>
-                </div>
-
-                <div class="d-flex align-items-center mb-3">
-                    <div class="bg-primary text-white rounded-circle d-flex justify-content-center align-items-center me-3" style="width: 40px; height: 40px;">✉️</div>
-                    <div>
-                        <h6 class="mb-0 fw-bold">E-posta</h6>
-                        <small class="text-muted">melih.yildiz8@ogr.sakarya.edu.tr</small>
-                    </div>
-                </div>
-
-                <div class="d-flex align-items-center mb-4">
-                    <div class="bg-primary text-white rounded-circle d-flex justify-content-center align-items-center me-3" style="width: 40px; height: 40px;">🎓</div>
-                    <div>
-                        <h6 class="mb-0 fw-bold">Üniversite</h6>
-                        <small class="text-muted">Sakarya Üniversitesi</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- API Veri Çekme İşlemi (JavaScript) -->
-    <script>
-        // 1. ADIM: İnternetteki ürün veri tabanına (API) gidip 4 tane ürün istiyoruz.
-        fetch('https://fakestoreapi.com/products?limit=4')
-            
-            // 2. ADIM: Gelen cevabı bilgisayarın anlayacağı JSON (veri) formatına çeviriyoruz.
-            .then(cevap => cevap.json())
-            
-            // 3. ADIM: Veriler hazır olduğunda ekrana (HTML içine) yazdırıyoruz.
-            .then(urunler => {
-                
-                // HTML'deki boş ürün kutumuzu buluyoruz
-                const urunKutusu = document.getElementById('urun-listesi');
-                
-                // "Yükleniyor..." yazısını temizliyoruz
-                urunKutusu.innerHTML = ''; 
-
-                // Gelen her bir ürün için bir döngü başlatıp ekrana Bootstrap kartı çiziyoruz
-                urunler.forEach(urun => {
-                    urunKutusu.innerHTML += `
-                        <div class="col-md-3 mb-4">
-                            <div class="card h-100 shadow-sm border-0 p-3 card-hover-effect">
-                                <img src="${urun.image}" class="card-img-top" style="height: 180px; object-fit: contain;" alt="Ürün Resmi">
-                                <div class="card-body text-center d-flex flex-column p-0 pt-3">
-                                    <h6 class="card-title text-truncate" title="${urun.title}">${urun.title}</h6>
-                                    <p class="card-text fw-bold text-success mt-auto fs-5">$${urun.price}</p>
-                                </div>
-                            </div>
-                        </div>
-                    `;
-                });
-            })
-            
-            // 4. ADIM: Eğer internet veya sunucu kaynaklı bir hata olursa ekrana uyarı veriyoruz.
-            .catch(hata => {
-                document.getElementById('urun-listesi').innerHTML = '<p class="text-danger text-center">Ürünler yüklenirken bir bağlantı hatası oluştu!</p>';
-            });
-    </script>
-
-
     
-    <!-- Bootstrap JS (Mobil menünün ve resim kaydırmanın çalışması için ZORUNLU) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-<script>
-        // Sayfadaki butonu ve form elemanlarını seçiyoruz
-        const gonderButonu = document.getElementById('gonderButonu');
-
-        gonderButonu.addEventListener('click', function() {
-            // Kullanıcının yazdığı değerleri alıyoruz
-            const ad = document.getElementById('adSoyad').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const mesaj = document.getElementById('mesaj').value.trim();
-
-            // 1. KONTROL: Alanlar boş mu?
-            if (ad === "" || email === "" || mesaj === "") {
-                alert("Lütfen tüm alanları doldurun!");
-                return; // Kodun devam etmesini durdurur
-            }
-
-            // 2. KONTROL: E-posta adresi geçerli mi (İçinde @ var mı)?
-            if (!email.includes("@")) {
-                alert("Lütfen geçerli bir e-posta adresi girin!");
-                return;
-            }
-
-            // Eğer her şey doğruysa başarı mesajı gösteriyoruz
-            alert("Teşekkürler " + ad + "! Mesajınız başarıyla (simüle edilerek) gönderildi.");
-            
-            // Formu temizliyoruz
-            document.getElementById('iletisimFormu').reset();
-        });
-    </script>
-
 </body>
 </html>
