@@ -60,3 +60,15 @@ h2.text-primary {
     height: 500px; 
     object-fit: cover;
 }
+/* İletişim Sonuç Sayfası Stilleri */
+.result-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.tablo-baslik {
+    width: 30%;
+}

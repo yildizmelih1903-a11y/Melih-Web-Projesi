@@ -5,21 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mesaj Gönderildi - Melih'in Portfolyosu</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: #f8f9fa;
-        }
-        .result-container {
-            max-width: 600px;
-            margin: 50px auto;
-            background: #fff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-light">
 
 <div class="container">
     <div class="result-container">
@@ -32,23 +20,24 @@
         // Form gönderildiğinde (POST işlemi) bu blok çalışır
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Güvenlik için verileri temizleyerek alıyoruz
-            $adSoyad = htmlspecialchars($_POST['adSoyad']);
-            $email = htmlspecialchars($_POST['email']);
-            $telefon = htmlspecialchars($_POST['telefon']);
-            $konu = htmlspecialchars($_POST['konu']);
+            $adSoyad = htmlspecialchars($_POST['adSoyad'] ?? '');
+            $email = htmlspecialchars($_POST['email'] ?? '');
+            $telefon = htmlspecialchars($_POST['telefon'] ?? '');
+            $konu = htmlspecialchars($_POST['konu'] ?? '');
             
-            // Radio buton seçili gelmemişse (olası bir hatayı önlemek için)
+            // Radio buton seçili gelmemişse
             $cinsiyet = isset($_POST['cinsiyet']) ? htmlspecialchars($_POST['cinsiyet']) : "Belirtilmedi";
             
-            $mesaj = htmlspecialchars($_POST['mesaj']);
+            $mesaj = htmlspecialchars($_POST['mesaj'] ?? '');
             
-            // Checkbox işaretlenmişse "Evet", işaretlenmemişse "Hayır" değerini al
+            // Checkbox onay kontrolü
             $kvkk = isset($_POST['kvkk']) ? "Evet, Onaylandı" : "Hayır";
 
             // Verileri ekrana düzenli (Bootstrap tablosu) ile yazdırıyoruz
+            // style="" yerine tablo-baslik class'ı kullanıldı
             echo "<table class='table table-bordered table-striped'>";
             echo "<tbody>";
-            echo "<tr><th style='width: 30%;'>Ad Soyad:</th><td>" . $adSoyad . "</td></tr>";
+            echo "<tr><th class='tablo-baslik'>Ad Soyad:</th><td>" . $adSoyad . "</td></tr>";
             echo "<tr><th>E-posta:</th><td>" . $email . "</td></tr>";
             echo "<tr><th>Telefon:</th><td>" . $telefon . "</td></tr>";
             echo "<tr><th>Konu:</th><td>" . $konu . "</td></tr>";
@@ -60,12 +49,12 @@
 
         } else {
             // Eğer sayfaya doğrudan girmeye çalışılırsa hata mesajı ver
-            echo "<div class='alert alert-danger'>Lütfen formu doldurarak gelin!</div>";
+            echo "<div class='alert alert-danger text-center'>Lütfen formu doldurarak gelin!</div>";
         }
         ?>
 
         <div class="text-center mt-4">
-            <a href="index.html" class="btn btn-primary">Ana Sayfaya Dön</a>
+            <a href="index.html" class="btn btn-primary px-4">Ana Sayfaya Dön</a>
         </div>
     </div>
 </div>
