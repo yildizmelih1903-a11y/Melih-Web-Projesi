@@ -1,27 +1,26 @@
 <?php
 // HOCA KURALI: Şifre ve kullanıcı adı değişkenleri 
-// DİKKAT: Aşağıdaki "b251210560" yazan yere KENDİ GERÇEK ÖĞRENCİ NUMARANI YAZ!
 $ogrenci_no = "b251210560"; 
-$dogru_mail = $ogrenci_no . "@sakarya.edu.tr";
+$dogru_mail = "melih.yildiz8@ogr.sakarya.edu.tr";
 $dogru_sifre = $ogrenci_no;
 
 $hata_mesaji = "";
 $giris_basarili = false;
 
-// Form gönderildiğinde (POST işlemi) bu blok çalışır [cite: 19]
+// Form gönderildiğinde (POST işlemi) bu blok çalışır
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $gelen_mail = $_POST['email'] ?? '';
     $gelen_sifre = $_POST['sifre'] ?? '';
 
-    // Boş alan kontrolü (JS geçilirse diye PHP önlemi) [cite: 19]
+    // Boş alan kontrolü (JS geçilirse diye PHP önlemi)
     if (empty($gelen_mail) || empty($gelen_sifre)) {
         $hata_mesaji = "Lütfen tüm alanları doldurun!";
     } 
-    // Bilgiler doğruysa [cite: 19]
+    // Bilgiler doğruysa
     elseif ($gelen_mail === $dogru_mail && $gelen_sifre === $dogru_sifre) {
         $giris_basarili = true;
     } 
-    // Bilgiler hatalıysa [cite: 25]
+    // Bilgiler hatalıysa
     else {
         $hata_mesaji = "Kullanıcı adı veya şifre hatalı! Lütfen tekrar deneyin.";
     }
@@ -42,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="index.html">Melih'in Portfolyosu</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-toggle="target" aria-controls="navbarNav">
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
